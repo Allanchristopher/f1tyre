@@ -1,0 +1,46 @@
+.Footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 50px;
+    color: #FFFFFF;
+}
+.Footer-container-1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.Footer-logo{
+    width: 165px;
+    height:108px;
+}
+.Footer-logo-text{
+    width: 340px;
+}
+.footer-box-2 ,.footer-box-3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Footer-headings{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.Company-container, .Reachus-container{
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+}
