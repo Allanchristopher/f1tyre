@@ -4,6 +4,10 @@ import Homeimg from "../Assests/Homeimg.svg"
 function Home() {
   return (
     <div className="Home">
+      <div className="Home-background-color">
+        <div></div>
+        <div className="Home-background-color-container"></div>
+      </div>
       <div className="Home-container-1">
         <p className="Home-heading">
           Discover the Perfect

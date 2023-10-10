@@ -16,6 +16,7 @@ function Footer() {
         <div className="footer-box-2">
           <p className="Footer-headings">Company</p>
           <div className="Company-container">
+            <p>Home</p>
             <p>About</p>
             <p>Products</p>
             <p>Gallery</p>

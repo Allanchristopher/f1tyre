@@ -1,30 +1,33 @@
 import React from 'react';
 import './Ourbrands.css';
 import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import Bridgestoneicon from '../Assests/Bridgestoneicon.svg';
 import JKTyreimg from '../Assests/JKTyreimg.svg';
 import Goodyearsimg from '../Assests/Goodyearsimg.svg';
 import Michelinimg from '../Assests/Michelinimg.svg';
 
 function Ourbrands() {
-  const logos = [Bridgestoneicon, JKTyreimg, Goodyearsimg, Michelinimg];
+  const logos = [Bridgestoneicon, JKTyreimg,Goodyearsimg,Michelinimg];
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+   autoplaySpeed: 2500,
     pauseOnHover: false,
   };
 
   return (
     <div className="Ourbrands">
+    <p className='Ourbrands-heading'>OUR BRANDS</p>
       <Slider {...settings} className="Ourbrands-slider-carousel">
         {logos.map((logo, index) => (
-          <div key={index} className="Ourbrands-carousel-icon">
-            <img src={logo} alt={`Logo ${index + 1}`} className="Ourbrands-carousel-logo" />
+          <div  className="Ourbrands-carousel-icon">
+            <img key={index} src={logo} alt={`Logo ${index + 1}`} className="Ourbrands-carousel-logo" />
           </div>
         ))}
       </Slider>

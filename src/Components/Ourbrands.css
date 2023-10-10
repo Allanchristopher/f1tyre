@@ -4,9 +4,23 @@
   padding: 50px;
   background-color: #fafafa;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+}
+.Ourbrands-heading{
+  font-family: var(--total-font-family);
+font-size: 23px;
+font-weight: 700;
+line-height: 23px;
+letter-spacing: 2.0999999046325684px;
+text-align: left;
+color: var(--text-dark-gray-color);
 }
 .Ourbrands-slider-carousel {
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,4 +39,8 @@
 .Ourbrands-carousel-logo {
   width: 100%;
   height: 50px;
+}
+.slick-dots li button:before {
+ color:  #EC3237!important;
+font-size: 10px !important;
 }

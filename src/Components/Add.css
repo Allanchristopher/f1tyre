@@ -1,0 +1,52 @@
+.Add {
+  width: 100%;
+  height: auto;
+}
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.add-background {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.add-image-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.add-image-text {
+  width: 762px;
+  font-family: var(--total-font-family);
+  font-size: 51px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}
+.add-button-container {
+  display: flex;
+  gap: 30px;
+}
+.add-btn {
+  width: 202px;
+  height: 46px;
+  font-family: var(--total-font-family);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+}
+.tyre-imge{
+    width: 492px;
+height: 492px;
+
+
+}

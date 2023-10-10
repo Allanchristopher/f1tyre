@@ -1,0 +1,117 @@
+.Enquiry {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+}
+.Enquiry-text-container {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+.Enquiry-heading {
+  font-family: var(--total-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--text-dark-gray-color);
+}
+.Enquiry-text {
+  font-family: var(--total-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #999999;
+}
+.Enquiry-form-conatiner {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+}
+.Enquiry-formcontainer-1 {
+  width: 100%;
+  height: 647px;
+  background-image: url("../Assests/Enquirybackimg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px 0px 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding: 20px;
+  color: #ffffff;
+}
+.Enquiry-formcontainer-1-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Enquiry-formcontainer-1-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+.Enquiry-information {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.Enquiry-formcontainer-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Enquiry-text-name {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #8d8d8d;
+  color: #343434;
+  font-family: var(--total-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Enquiry-text-name::placeholder {
+  color: #343434;
+  font-family: var(--total-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Enquiry-submit-button{
+    width: 80%;
+    border: none;
+    background-color: #EC3237;
+    font-family: var(--total-font-family);
+font-size: 12px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 2px;
+text-align: center;
+color: #FFFFFF;
+}
