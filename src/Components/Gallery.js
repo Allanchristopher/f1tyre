@@ -15,7 +15,16 @@ function Gallery() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
-    pauseOnHover: false,
+    pauseOnHover: true,
+    responsive: [
+     {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   };
   return (
     <div className="Gallery">

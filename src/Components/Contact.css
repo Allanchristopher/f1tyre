@@ -1,144 +1,243 @@
-.Contact{
-    width: 100%;
-    min-height: 100vh;
-    padding: 50px 0px 50px 0px;
+.Contact {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0px 50px 0px;
 }
 .Contact-text-container {
-    width: 100%;
-    height: auto;
-    padding: 50px;
-  }
-  .Contact-heading {
-    font-family: var(--total-font-family);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 43px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: var(--text-dark-gray-color);
-  }
-  .Contact-text {
-    font-family: var(--total-font-family);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: #999999;
-  }
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+.Contact-heading {
+  font-family: var(--total-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--text-dark-gray-color);
+}
+.Contact-text {
+  font-family: var(--total-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #999999;
+}
 
+.Contact-form-conatiner {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+}
+.Contact-formcontainer-1 {
+  width: 100%;
+  height: 647px;
+  background-image: url("../Assests/mapbackimg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0px 20px ;
+  color: #ffffff;
+}
+.Contact-formcontainer-1-1 {
+  width: 100%;
 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Contact-formcontainer-1-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.Contact-information {
+  font-family: 'Poppins', sans-serif;
 
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
+.Contact-information-text {
+  font-family: var(--total-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Contact-formcontainer-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Contact-text-name {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #8d8d8d;
+  color: #343434;
+  font-family: var(--total-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Contact-text-name::placeholder,
+.Contact-text-area::placeholder {
+  color: #343434;
+  font-family: var(--total-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Contact-submit-button {
+  width: 80%;
+  border: none;
+  background-color: #ec3237;
+  font-family: var(--total-font-family);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+}
+.Contact-text-area {
+  width: 80%;
+  height: 250px;
+  border: none;
+  border-bottom: 1px solid #8d8d8d;
+  color: #343434;
+  font-family: var(--total-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.callus-direction-btn-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.Callus-btn,
+.Direction-btn {
+  width: 80%;
+  background-color: #000000;
+}
+.leaf-let-map {
+  width: 611px;
+  height: 568px;
+  z-index: 0;
+}
+@media (max-width: 1000px) {
   .Contact-form-conatiner {
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: 0.6fr 1fr;
-  }
-  .Contact-formcontainer-1 {
-    width: 100%;
-    height: 647px;
-    background-image: url("../Assests/mapbackimg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
-    padding: 20px;
-    color: #ffffff;
+    flex-direction: column-reverse;
+    gap: 30px;
   }
-  .Contact-formcontainer-1-1 {
-    display: flex;
-    
-    flex-direction: column;
-    gap: 20px;
-  }
-  .Contact-formcontainer-1-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #ffffff;
-  }
-  .Contact-information {
-    font-family: Poppins;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 42px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  
   .Contact-formcontainer-2 {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-  }
-  .Contact-text-name {
-    width: 80%;
-    height: 30px;
-    border: none;
-    border-bottom: 1px solid #8d8d8d;
-    color: #343434;
-    font-family: var(--total-font-family);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  .Contact-text-name::placeholder, .Contact-text-area::placeholder {
-    color: #343434;
-    font-family: var(--total-font-family);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  .Contact-submit-button{
-      width: 80%;
-      border: none;
-      background-color: #EC3237;
-      font-family: var(--total-font-family);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #FFFFFF;
-  }
-  .Contact-text-area{
-    width: 80%;
-    height: 250px;
-    border: none;
-    border-bottom: 1px solid #8d8d8d;
-    color: #343434;
-    font-family: var(--total-font-family);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-  .callus-direction-btn-container{
-    width:80%;
-    display: flex;
-    justify-content: space-between;
     gap: 20px;
   }
-  .Callus-btn,.Direction-btn{
-    width: 80%;
-    background-color: #000000;
-
+  .leaf-let-map {
+    width: 811px;
+    height: 568px;
+    z-index: 0;
   }
+  .Contact-formcontainer-1{
+    gap: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .leaf-let-map {
+    width: 711px;
+    height: 568px;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .leaf-let-map {
+    width: 611px;
+    height: 568px;
+    z-index: 0;
+  }
+}
+@media (max-width: 700px) {
+  .Contact-heading {
+    font-size: 30px;
+  }
+  .Contact-information {
+    font-size: 23px;
+  }
+}
+@media (max-width: 640px) {
+  .leaf-let-map {
+    width: 511px;
+    height: 568px;
+    z-index: 0;
+  }
+}
+@media (max-width: 540px) {
+  .leaf-let-map {
+    width: 411px;
+    height: 568px;
+    z-index: 0;
+  }
+}
+@media (max-width: 440px) {
+  .leaf-let-map {
+    width: 311px;
+    height: 468px;
+    z-index: 0;
+  }
+}
+@media (max-width: 350px) {
+  .Contact-information-text,
+  .Contact-text {
+    font-size: 14px;
+  }
+  .leaf-let-map {
+    width: 270px;
+    height: 468px;
+    z-index: 0;
+  }
+}

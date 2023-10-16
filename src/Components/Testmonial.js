@@ -15,6 +15,21 @@ function Testmonial() {
         autoplay: true,
         autoplaySpeed: 2500,
         pauseOnHover: false,
+        responsive: [
+          {
+            breakpoint: 1000,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },{
+            breakpoint: 700,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          },
+        ]
       };
   return (
     <div className="Testmonial">

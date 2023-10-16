@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+
 import logo from "../Assests/f1-logo.svg";
-import "./Navbar.css";
 import { Link } from "react-scroll";
-import { FaBars, FaTimes } from "react-icons/fa";
-function Navbar() {
+import { FaTimes } from "react-icons/fa";
+function Navbar1() {
   const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
@@ -12,7 +12,7 @@ function Navbar() {
   const [activenavbar, setactivenavbar] = useState(false);
   const changebackground = () => {
     // console.log(window.screenY);
-    if (window.scrollY >= 20) {
+    if (window.scrollY >= 10) {
       setactivenavbar(true);
     } else {
       setactivenavbar(false);
@@ -23,20 +23,13 @@ function Navbar() {
   return (
     <>
       <header className={activenavbar ? "header active-navbar" : "header"} >
-        <Link
-          activeClass="nav-a-active"
-          to="Home"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-        >
-          <img className="navlogo" src={logo} alt="Logo" />
-        </Link>
+     
+          <a href="">  <img className="navlogo" src={logo} alt="Logo" /></a>
+        
         <nav className={`nav-elements  ${showNavbar && "responsive_nav"}`}>
-          <a>
+          {/* <a >
             <Link
-              activeClass="nav-a-active"
+              activeClass="nav-active"
               to="Home"
               spy={true}
               smooth={true}
@@ -44,77 +37,51 @@ function Navbar() {
               duration={500}
               onClick={handleShowNavbar}
             >
-              HOME
+              Home
             </Link>
           </a>
           <a>
             <Link
-              activeClass="nav-a-active"
-              to="Aboutus"
+              activeClass="nav-active"
+              to="About"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
+              onClick={handleShowNavbar}  
+            >
+              About
+            </Link>
+          </a>
+          <a>
+            <Link
+              activeClass="nav-active"
+              to="Gallery"
               spy={true}
               smooth={true}
               offset={-50}
               duration={500}
               onClick={handleShowNavbar}
             >
-              ABOUT
+              Gallery
             </Link>
           </a>
           <a>
             <Link
-              activeClass="nav-a-active"
-              to="Ourproducts"
+              activeClass="nav-active"
+              to="Testimonials"
               spy={true}
               smooth={true}
-              offset={-19}
+              offset={-50}
               duration={500}
               onClick={handleShowNavbar}
             >
-              PRODUCTS
+              Testimonials
             </Link>
           </a>
           <a>
             <Link
-              activeClass="nav-a-active"
-              to="Gallery"
-              spy={true}
-              smooth={true}
-              offset={-19}
-              duration={500}
-              onClick={handleShowNavbar}
-            >
-              GALLERY
-            </Link>
-          </a>
-          <a>
-            <Link
-              activeClass="nav-a-active"
-              to="Testmonial"
-              spy={true}
-              smooth={true}
-              offset={-40}
-              duration={500}
-              onClick={handleShowNavbar}
-            >
-              TESTIMONIAL
-            </Link>
-          </a>
-          <a>
-            <Link
-              activeClass="nav-a-active"
-              to="Ourservices"
-              spy={true}
-              smooth={true}
-              offset={-40}
-              duration={500}
-              onClick={handleShowNavbar}
-            >
-              SERVICES
-            </Link>
-          </a>
-          <a>
-            <Link
-              activeClass="nav-a-active"
+              activeClass="nav-active"
               to="Contact"
               spy={true}
               smooth={true}
@@ -122,23 +89,22 @@ function Navbar() {
               duration={500}
               onClick={handleShowNavbar}
             >
-              CONTACT
+              Contact
             </Link>
-          </a>
+          </a> */}
           <button className="nav-res-close-btn" onClick={handleShowNavbar}>
             <FaTimes />
           </button>
         </nav>
         <a href="tel:+91 7010573022">
+          {" "}
           <button className="call-button"> CALL US NOW!</button>
         </a>
 
-        <button className="nav-res-btn" onClick={handleShowNavbar}>
-          <FaBars />
-        </button>
+        {/* <button className="nav-res-btn" onClick={handleShowNavbar}><FaBars/></button> */}
       </header>
     </>
   );
 }
 
-export default Navbar;
+export default Navbar1;

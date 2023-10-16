@@ -18,7 +18,24 @@ function Ourbrands() {
     slidesToScroll: 1,
     autoplay: true,
    autoplaySpeed: 2500,
-    pauseOnHover: false,
+    pauseOnHover: true,
+    arrows: false,
+ 
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      }, {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+           centerMode: true,
+        }
+      },]
   };
 
   return (

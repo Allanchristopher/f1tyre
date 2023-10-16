@@ -87,3 +87,34 @@ gap: 20px;
     align-items: center;
     justify-content: center;
   }
+  @media(max-width:700px){
+    .Ourproducts-heading {
+      font-size: 30px;
+    }
+  }
+@media(max-width:600px){
+  .Testmonial {
+    gap: 40px;
+}
+
+}
+  @media(max-width:400px){
+    .coustomer-img {
+      width: 60px;
+      height: 60px;
+    }
+    .Star {
+      width: 151px;
+      height: 28px;
+    }
+  }
+  @media (max-width:350px){
+    .Ourproducts-heading-text {
+      font-size: 14px;
+      line-height: 24px;
+    }
+    .review-text {
+      font-size: 14px;
+      
+    }
+  }

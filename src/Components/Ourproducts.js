@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Ourproductimg1 from "../Assests/Ourproductimg-1.jpg";
+import 'font-awesome/css/font-awesome.min.css';
 function Ourproducts() {
   const settings = {
     dots: true,
@@ -13,7 +14,31 @@ function Ourproducts() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
-    pauseOnHover: false,
+    pauseOnHover: true,
+    prevArrow: (
+      <button className="custom-prev-button">
+        <i className="fa fa-chevron-left"></i>
+      </button>
+    ),
+    nextArrow: (
+      <button className="custom-next-button">
+        <i className="fa fa-chevron-right"></i>
+      </button>
+    ), responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },{
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   };
   return (
     <div className="Ourproducts">
@@ -31,7 +56,8 @@ function Ourproducts() {
         <p className="product-name">Good Year Tyre - 165/65R14</p>
         <div className="porduct-price-container">
           <p className="product-price">₹ 6000</p>
-          <button className="product-Enquiry-btn">Enquiry</button>
+          <a href="/Enquiry">  <button className="product-Enquiry-btn">Enquiry</button></a>
+        
         </div>
       </div>
     </div>
@@ -41,7 +67,8 @@ function Ourproducts() {
         <p className="product-name">Good Year Tyre - 165/65R14</p>
         <div className="porduct-price-container">
           <p className="product-price">₹ 6000</p>
-          <button className="product-Enquiry-btn">Enquiry</button>
+          <a href="/Enquiry"> <button className="product-Enquiry-btn">Enquiry</button></a>
+         
         </div>
       </div>
     </div>
@@ -51,7 +78,8 @@ function Ourproducts() {
         <p className="product-name">Good Year Tyre - 165/65R14</p>
         <div className="porduct-price-container">
           <p className="product-price">₹ 6000</p>
-          <button className="product-Enquiry-btn">Enquiry</button>
+          <a href="/Enquiry"><button className="product-Enquiry-btn">Enquiry</button></a>
+          
         </div>
       </div>
     </div>
@@ -61,7 +89,8 @@ function Ourproducts() {
         <p className="product-name">Good Year Tyre - 165/65R14</p>
         <div className="porduct-price-container">
           <p className="product-price">₹ 6000</p>
-          <button className="product-Enquiry-btn">Enquiry</button>
+          <a href="/Enquiry"><button className="product-Enquiry-btn">Enquiry</button></a>
+          
         </div>
       </div>
     </div>
@@ -71,7 +100,8 @@ function Ourproducts() {
         <p className="product-name">Good Year Tyre - 165/65R14</p>
         <div className="porduct-price-container">
           <p className="product-price">₹ 6000</p>
-          <button className="product-Enquiry-btn">Enquiry</button>
+          <a href="/Enquiry"> <button className="product-Enquiry-btn">Enquiry</button></a>
+         
         </div>
       </div>
     </div>

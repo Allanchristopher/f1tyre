@@ -1,46 +1,122 @@
-.Footer{
+.Footer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  padding: 50px;
+  color: #ffffff;
+}
+.Footer-container-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer-logo {
+  width: 165px;
+  height: 108px;
+  cursor: pointer;
+}
+.Footer-logo-text {
+  max-width: 340px;
+}
+
+.footer-box-1 {
+  position: relative;
+}
+.footer-socialmedia-icon {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-box-2,
+.footer-box-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Footer-headings {
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.Company-container,
+.Reachus-container {
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+.Reachus-container a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.Address {
+  max-width: 250px;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 1000px) {
+    .Footer {
+      position: relative;
+      }
+  .Footer-container-1 {
     width: 100%;
     height: auto;
-    background-color: black;
-    padding: 50px;
-    color: #FFFFFF;
-}
-.Footer-container-1{
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.Footer-logo{
-    width: 165px;
-    height:108px;
-}
-.Footer-logo-text{
-    width: 340px;
-}
-.footer-box-2 ,.footer-box-3{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .footer-box-1 {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-box-2,
+  .footer-box-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
+    text-align: center;
+  }
+  .Company-container,
+  .Reachus-container {
+    font-size: 16px;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer-socialmedia-icon{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
 }
-.Footer-headings{
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    
+  
 }
-.Company-container, .Reachus-container{
-    font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-display: flex;
-flex-direction: column;
-gap: 10px;
-
+@media(max-width:350px){
+  .Footer-headings{
+    font-size: 16px;
+  }
+  .Company-container,
+  .Reachus-container {
+    font-size: 14px;
+  }
 }

@@ -47,7 +47,7 @@
   height: 255px;
 }
 .product-name {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
@@ -62,7 +62,7 @@
   justify-content: space-evenly;
 }
 .product-price {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 26px;
@@ -75,7 +75,7 @@
   height: 36px;
   border-radius: 5px;
 
-  font-family: Rubik;
+  font-family: 'Rubik', sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 20px;
@@ -97,3 +97,111 @@
     align-items: center;
     justify-content: center;
   }
+  .slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 30px;
+    height: 50px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    background:  #EC3237;
+    
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  color: #ffffff;
+  outline: none;
+  background:  #EC3237;
+}
+
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 18px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-next:before {
+  content: '->';
+}
+.slick-prev:before {
+  content: '<-';
+}
+
+@media(max-width:700px){
+  .Ourproducts-heading {
+    font-size: 30px;
+  }
+  .product-card {
+    width: 290px;
+    height: 300px;
+  }
+  .poductimage {
+    width: 200px;
+    height: 200px;
+  }
+  .product-name {
+    font-size: 16px;
+  }
+  .product-price {
+    font-size: 16px;
+  }
+  .product-Enquiry-btn {
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+}
+@media(max-width:600px){
+  .product-card {
+    width: 230px;
+    height: 270px;
+  }
+  .product-name {
+    font-size: 14px;
+  }
+  .poductimage {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media(max-width:400px){
+  .product-card {
+    width: 200px;
+    height: 270px;
+  }
+  .product-name {
+    font-size: 14px;
+  }
+  .poductimage {
+    width: 120px;
+    height: 120px;
+  }
+  .product-price {
+    font-size: 14px;
+  }
+  .product-Enquiry-btn {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+}
+@media (max-width:350px){
+  .Ourproducts-heading-text {
+    font-size: 14px;
+    line-height: 29px;
+  }
+}

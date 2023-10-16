@@ -56,16 +56,25 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
+ 
+}
+
+
+.Enquiry-formcontainer-1-2 a{
+  color: #ffffff;
+  text-decoration: none;
 }
 .Enquiry-information {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
+
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;

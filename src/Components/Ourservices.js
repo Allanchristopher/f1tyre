@@ -1,7 +1,19 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import "./Ourservices.css";
 import Ourserviceimg from "../Assests/Ourserviceimg.svg";
 function Ourservices() {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1000);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 1000);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="Ourservices">
       <div className="Ourservices-container-1">
@@ -14,10 +26,15 @@ function Ourservices() {
       <div className="Ourservices-container-2">
         <div className="Ourservice-1">
           <div className="Ourservice--img-container">
+          {isSmallScreen && (
+            <p className="Ourservice-1-text-heading">Wheel Alignment</p>
+          )}
             <img src={Ourserviceimg} alt="Img" className="Ourserviceimg" />
           </div>
           <div className="Ourservice--text">
+          {!isSmallScreen && (
             <p className="Ourservice-1-text-heading">Wheel Alignment</p>
+          )}
             <p className="Ourservice-1-text-text">
               Maintaining your vehicle's peak performance and ensuring your
               safety on the road requires more than just routine oil changes and
@@ -29,7 +46,28 @@ function Ourservices() {
           </div>
         </div>
         <div className="Ourservice-1">
-          <div className="Ourservice--text">
+        {isSmallScreen && (
+          <> 
+          <div className="Ourservice--img-container">
+          <p className="Ourservice-1-text-heading">Wheel Balancing</p>
+          <img src={Ourserviceimg} alt="Img" className="Ourserviceimg" />
+        </div>
+         <div className="Ourservice--text">
+            <p className="Ourservice-1-text-text">
+              When it comes to maintaining your vehicle's performance and
+              ensuring a safe driving experience, wheel balancing is a crucial
+              aspect that should never be overlooked. As your vehicle's tires
+              wear down over time, they become imbalanced, leading to
+              vibrations, uneven tire wear, and potentially hazardous driving
+              conditions.
+            </p>
+          </div>
+         </>
+        
+        )}
+
+        {!isSmallScreen && (
+          <>   <div className="Ourservice--text">
             <p className="Ourservice-1-text-heading">Wheel Balancing</p>
             <p className="Ourservice-1-text-text">
               When it comes to maintaining your vehicle's performance and
@@ -42,14 +80,23 @@ function Ourservices() {
           </div>
           <div className="Ourservice--img-container">
             <img src={Ourserviceimg} alt="Img" className="Ourserviceimg" />
-          </div>
+          </div></>
+        )}
+
+
+       
         </div>
         <div className="Ourservice-1">
           <div className="Ourservice--img-container">
+          {isSmallScreen && (
+            <p className="Ourservice-1-text-heading">Tyre Fitting</p>
+          )}
             <img src={Ourserviceimg} alt="Img" className="Ourserviceimg" />
           </div>
           <div className="Ourservice--text">
+          {!isSmallScreen && (
             <p className="Ourservice-1-text-heading">Tyre Fitting</p>
+          )}
             <p className="Ourservice-1-text-text">
               Your vehicle's tires are the only point of contact between you and
               the road, making their proper installation and fitting essential

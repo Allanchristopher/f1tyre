@@ -44,3 +44,10 @@ color: var(--text-dark-gray-color);
  color:  #EC3237!important;
 font-size: 10px !important;
 }
+
+
+@media (max-width:700px){
+  .Ourbrands-heading{
+  font-size: 20px;
+  }
+}

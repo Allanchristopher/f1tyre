@@ -45,7 +45,7 @@ nav a {
   font-weight: 400;
   position: relative;
   cursor: pointer;
-  font-family: "Poppins", sans-serif;
+  font-family: var( --total-font-family);
 }
 nav a:hover {
   color:#EC3237;
@@ -84,7 +84,7 @@ nav a .nav-active:before {
   font-size: var(--navbarbuttontextsize);
   font-style: normal;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: var( --total-font-family);
   letter-spacing: 1px;
   cursor: pointer;
   transition: 1s;
