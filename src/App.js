@@ -6,18 +6,20 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Enquiry from "./Components/Enquiry";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Add from "./Components/Add";
 
 function App() {
   return (
     <div className="App">
-     <BrowserRouter>
- <Routes>
- <Route index path="/" element={<Home />} />
- <Route path="/Enquiry" element={<Enquiry />} />
- </Routes>
- <Contact/>
- <Footer />
- </BrowserRouter>
+ 
+<BrowserRouter>
+<Routes>
+<Route index path="/" element={<Home />} />
+<Route path="/Enquiry" element={<Enquiry />} />
+</Routes>
+<Contact/>
+<Footer />
+</BrowserRouter>
     </div>
   );
 }
@@ -31,8 +33,10 @@ export default App;
 //  <Ourproducts />
 //<Gallery />
 //  <Testmonial />
-// <Add />
+//    <Add/>
 // <Ourservices />
 // <Contact />
 // <Footer />
+
+
 

@@ -27,7 +27,7 @@ function Gallery() {
     ]
   };
   return (
-    <div className="Gallery">
+    <div className="Gallery-big-screen">  <div className="Gallery">
       <div className="Gallery-heading-container">
         <p className="Gallery-heading">Gallery</p>
         <p className="Gallery-heading-text">
@@ -49,7 +49,8 @@ function Gallery() {
           </div>
         ))}
       </Slider>
-    </div>
+    </div></div>
+  
   );
 }
 

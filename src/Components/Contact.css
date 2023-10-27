@@ -1,3 +1,9 @@
+.Contact-big-screen{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
 .Contact {
   width: 100%;
   min-height: 100vh;
@@ -35,7 +41,7 @@
 }
 .Contact-formcontainer-1 {
   width: 100%;
-  height: 647px;
+  height: 550px;
   background-image: url("../Assests/mapbackimg.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -49,7 +55,7 @@
 }
 .Contact-formcontainer-1-1 {
   width: 100%;
-
+  padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -91,6 +97,7 @@
 .Contact-formcontainer-2 {
   width: 100%;
   height: 100%;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,7 +140,7 @@
 }
 .Contact-text-area {
   width: 80%;
-  height: 250px;
+  height: 170px;
   border: none;
   border-bottom: 1px solid #8d8d8d;
   color: #343434;
@@ -156,8 +163,8 @@
   background-color: #000000;
 }
 .leaf-let-map {
-  width: 611px;
-  height: 568px;
+  width: 480px;
+  height: 450px;
   z-index: 0;
 }
 @media (max-width: 1000px) {
@@ -239,5 +246,10 @@
     width: 270px;
     height: 468px;
     z-index: 0;
+  }
+}
+@media(min-width:1400px){
+  .Contact {
+    width: 1400px;
   }
 }

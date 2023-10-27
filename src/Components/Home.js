@@ -17,7 +17,8 @@ function Home() {
   return (
     <>
     <Navbar/>
-      <div className="Home">
+    <div className="Home-big-screen">   <div className="Home">
+      
         <div className="Home-background-color">
           <div></div>
           <div className="Home-background-color-container"></div>
@@ -53,22 +54,23 @@ function Home() {
           <div className="Home-btn-container">
             <a href="/Enquiry">
               {" "}
-              <button className="Home-enquiry-btn"> enquiry</button>
+              <button className="Home-enquiry-btn Home-btn"> enquiry</button>
             </a>
-            <a href="tel:+91 7010573022"><button className="Home-call-btn">Call us now</button></a>
+            <a href="tel:+91 9843061699"><button className="Home-call-btn Home-btn">Call us now</button></a>
             
           </div>
         </div>
         <div className="Home-container-2">
           <img src={Homeimg} alt="Img" className="Home-img" />
         </div>
-      </div>
+      </div></div>
+   
       <Aboutus />
       <Ourbrands />
       <Ourproducts />
       <Gallery />
       <Testmonial />
-      <Add />
+     <Add /> 
       <Ourservices />
     </>
   );

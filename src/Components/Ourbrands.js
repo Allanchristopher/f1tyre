@@ -39,7 +39,7 @@ function Ourbrands() {
   };
 
   return (
-    <div className="Ourbrands">
+    <div className='Ourbrands-big-screen'><div className="Ourbrands">
     <p className='Ourbrands-heading'>OUR BRANDS</p>
       <Slider {...settings} className="Ourbrands-slider-carousel">
         {logos.map((logo, index) => (
@@ -48,7 +48,8 @@ function Ourbrands() {
           </div>
         ))}
       </Slider>
-    </div>
+    </div></div>
+    
   );
 }
 

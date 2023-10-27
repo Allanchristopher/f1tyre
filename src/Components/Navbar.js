@@ -66,7 +66,7 @@ function Navbar() {
               to="Ourproducts"
               spy={true}
               smooth={true}
-              offset={-19}
+              offset={-40}
               duration={500}
               onClick={handleShowNavbar}
             >
@@ -79,7 +79,7 @@ function Navbar() {
               to="Gallery"
               spy={true}
               smooth={true}
-              offset={-19}
+              offset={-40}
               duration={500}
               onClick={handleShowNavbar}
             >
@@ -92,7 +92,7 @@ function Navbar() {
               to="Testmonial"
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={-26}
               duration={500}
               onClick={handleShowNavbar}
             >
@@ -129,7 +129,7 @@ function Navbar() {
             <FaTimes />
           </button>
         </nav>
-        <a href="tel:+91 7010573022">
+        <a href="tel:+91 9843061699">
           <button className="call-button"> CALL US NOW!</button>
         </a>
 

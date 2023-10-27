@@ -1,3 +1,9 @@
+.Home-big-screen{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
 .Home {
   width: 100%;
   min-height: 100vh;
@@ -52,7 +58,7 @@
   display: flex;
   gap: 20px;
 }
-Button {
+.Home-btn {
   width: 157px;
   height: 46px;
   border: none;
@@ -122,7 +128,7 @@ Button {
   .Home-heading {
     font-size: 40px;
   }
-  Button {
+  .Home-btn {
     width: 107px;
     height: 46px;
     font-size: 10px;
@@ -135,8 +141,13 @@ Button {
   .Home-heading {
     font-size: 30px;
   }
-  Button {
+  .Home-btn {
     width: 87px;
     height: 46px;
+  }
+}
+@media(min-width:1400px){
+  .Home {
+    width: 1400px;
   }
 }

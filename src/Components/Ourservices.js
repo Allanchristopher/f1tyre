@@ -15,7 +15,7 @@ function Ourservices() {
     };
   }, []);
   return (
-    <div className="Ourservices">
+    <div className="Ourservices-big-screen"><div className="Ourservices">
       <div className="Ourservices-container-1">
         <p className="Ourservice-heading">Our Services</p>
         <p className="Ourservice-text">
@@ -108,7 +108,8 @@ function Ourservices() {
           </div>
         </div>
       </div>
-    </div>
+    </div></div>
+    
   );
 }
 

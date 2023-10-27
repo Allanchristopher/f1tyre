@@ -13,7 +13,7 @@ function Enquiry() {
   return (
     <>
     <Navbar1/>
-    <div className="Enquiry">
+    <div className="Enquiry-big-screen"> <div className="Enquiry">
       <div className="Enquiry-text-container">
         <p className="Enquiry-heading">Enquiry</p>
         <br />
@@ -81,10 +81,11 @@ function Enquiry() {
           <input type="text" placeholder="choose Brand" className="Enquiry-text-name" required/>
           <input type="text" placeholder="Tyre Size" className="Enquiry-text-name" required/>
           <input type="text" placeholder="Tyre Pattern" className="Enquiry-text-name" required/>
-          <button className="Enquiry-submit-button" type="Submit">SUBMIT</button>
+          <button className="Enquiry-submit-button Home-btn" type="Submit">SUBMIT</button>
         </div>
       </div>
-    </div></>
+    </div></div>
+   </>
     
   );
 }

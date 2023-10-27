@@ -1,3 +1,9 @@
+.Gallery-big-screen{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
 .Gallery {
   width: 100%;
   min-height: 100%;
@@ -5,6 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
+  margin-top: 50px;
 }
 .Gallery-heading-container {
   width: 100%;
@@ -51,6 +58,79 @@
   height: 554px;
   object-fit: fill;
 }
+
+
+
+.slick-dots {
+
+  position: absolute;
+  bottom: -70px;}
+.product-slider-carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-carousel-icon {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .slick-prev, .slick-next {
+    width: 46px !important;
+    height:77px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    /* top: 50%; */
+    z-index: 1;
+    /* width: 30px;
+    height: 50px;
+    padding: 0; */
+    /* transform: translate(0, -50%); */
+    
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    background:  #EC3237;
+    
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  color: #ffffff;
+  outline: none;
+  background:  #EC3237;
+}
+
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 18px;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-next:before {
+  width: 100%;
+  content: url(../Assests/right-arrow.svg);
+  /* margin-left:50px; */
+}
+.slick-prev:before {
+  width: 100%;
+  content: url(../Assests/left-arrow.svg);
+}
+
+
+
+
 @media(max-width:1200px){
   .Gallery-carousel-image{
     width: 480px;
@@ -128,5 +208,10 @@
   .Gallery-heading-text{
     font-size: 14px;
     line-height: 24px;
+  }
+}
+@media(min-width:1400px){
+  .Gallery {
+    width: 1400px;
   }
 }

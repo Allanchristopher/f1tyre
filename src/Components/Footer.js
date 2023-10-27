@@ -76,7 +76,7 @@ function Footer() {
       to="Ourproducts"
       spy={true}
       smooth={true}
-      offset={-19}
+      offset={-40}
       duration={500}
     ><p>Products</p></Link>
     <Link
@@ -84,7 +84,7 @@ function Footer() {
     to="Gallery"
     spy={true}
     smooth={true}
-    offset={-19}
+    offset={-40}
     duration={500}
   ><p>Gallery</p></Link>
   <Link
@@ -92,7 +92,7 @@ function Footer() {
   to="Testmonial"
   spy={true}
   smooth={true}
-  offset={-40}
+  offset={-26}
   duration={500}
 ><p>Testimonial</p></Link>
 <Link

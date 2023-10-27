@@ -22,7 +22,7 @@ function Contact() {
   });
 
   return (
-    <div className="Contact">
+    <div className="Contact-big-screen"> <div className="Contact">
       <div className="Contact-text-container">
         <p className="Contact-heading">Contact Us</p>
         <br />
@@ -76,16 +76,17 @@ function Contact() {
             className="Contact-text-area"
             required
           />
-          <button className="Contact-submit-button" type="Submit">
+          <button className="Contact-submit-button Home-btn" type="Submit">
             SUBMIT
           </button>
           <div className="callus-direction-btn-container">
-            <button className="Callus-btn">CALL US NOW!</button>
-            <button className="Direction-btn">GET DIRECTION</button>
+            <button className="Callus-btn Home-btn">CALL US NOW!</button>
+            <button className="Direction-btn Home-btn">GET DIRECTION</button>
           </div>
         </div>
       </div>
-    </div>
+    </div></div>
+   
   );
 }
 

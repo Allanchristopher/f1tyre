@@ -1,3 +1,9 @@
+.Testmonial-big-screen{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
 .Testmonial {
   width: 100%;
   min-height: 100%;
@@ -116,5 +122,10 @@ gap: 20px;
     .review-text {
       font-size: 14px;
       
+    }
+  }
+  @media(min-width:1400px){
+    .Testmonial  {
+      width: 1400px;
     }
   }

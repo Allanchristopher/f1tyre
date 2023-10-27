@@ -1,3 +1,9 @@
+.Ourproducts-big-screen{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
 .Ourproducts {
   width: 100%;
   min-height: 100%;
@@ -71,7 +77,7 @@
   color: #25252e;
 }
 .product-Enquiry-btn {
-  width: 105px;
+  width: 250px;
   height: 36px;
   border-radius: 5px;
 
@@ -84,60 +90,9 @@
   color: #ec3237;
   background: transparent;
   border: 1px solid #ec3237;
-}
-.product-slider-carousel {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .product-carousel-icon {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-  }
-  .slick-prev, .slick-next {
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-    width: 30px;
-    height: 50px;
-    padding: 0;
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: #ffffff;
-    border: none;
-    border-radius: 0px;
-    outline: none;
-    background:  #EC3237;
-    
+  cursor: pointer;
 }
 
-.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
-  color: #ffffff;
-  outline: none;
-  background:  #EC3237;
-}
-
-
-.slick-prev:before, .slick-next:before {
-  font-family: 'slick';
-  font-size: 18px;
-  line-height: 1;
-  opacity: .75;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.slick-next:before {
-  content: '->';
-}
-.slick-prev:before {
-  content: '<-';
-}
 
 @media(max-width:700px){
   .Ourproducts-heading {
@@ -203,5 +158,10 @@
   .Ourproducts-heading-text {
     font-size: 14px;
     line-height: 29px;
+  }
+}
+@media(min-width:1400px){
+  .Ourproducts {
+    width: 1400px;
   }
 }

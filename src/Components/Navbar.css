@@ -27,8 +27,8 @@
 }
 .navlogo {
   cursor: pointer;
-  width: 156.14px;
-  height: 32.49px;
+  width: 75px;
+  height: 49px;
 }
 nav {
   height: 100%;
@@ -36,16 +36,19 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 40px;
 }
 nav a {
   color: var(--navbartextcolor);
   text-decoration: none;
   font-size: var(--navbarfontsize);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   position: relative;
   cursor: pointer;
   font-family: var( --total-font-family);
+  line-height: 20px;
+  letter-spacing: 2px;
 }
 nav a:hover {
   color:#EC3237;

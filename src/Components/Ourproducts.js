@@ -41,7 +41,7 @@ function Ourproducts() {
     ]
   };
   return (
-    <div className="Ourproducts">
+    <div className="Ourproducts-big-screen"> <div className="Ourproducts">
       <div className="Ourproducts-heading-container">
         <p className="Ourproducts-heading">Our Products</p>
         <p className="Ourproducts-heading-text">
@@ -55,7 +55,7 @@ function Ourproducts() {
         <img src={Ourproductimg1} alt="productimage" className="poductimage"/>
         <p className="product-name">Good Year Tyre - 165/65R14</p>
         <div className="porduct-price-container">
-          <p className="product-price">₹ 6000</p>
+          
           <a href="/Enquiry">  <button className="product-Enquiry-btn">Enquiry</button></a>
         
         </div>
@@ -66,7 +66,7 @@ function Ourproducts() {
         <img src={Ourproductimg1} alt="productimage" className="poductimage"/>
         <p className="product-name">Good Year Tyre - 165/65R14</p>
         <div className="porduct-price-container">
-          <p className="product-price">₹ 6000</p>
+          
           <a href="/Enquiry"> <button className="product-Enquiry-btn">Enquiry</button></a>
          
         </div>
@@ -77,7 +77,7 @@ function Ourproducts() {
         <img src={Ourproductimg1} alt="productimage" className="poductimage"/>
         <p className="product-name">Good Year Tyre - 165/65R14</p>
         <div className="porduct-price-container">
-          <p className="product-price">₹ 6000</p>
+          
           <a href="/Enquiry"><button className="product-Enquiry-btn">Enquiry</button></a>
           
         </div>
@@ -88,7 +88,7 @@ function Ourproducts() {
         <img src={Ourproductimg1} alt="productimage" className="poductimage"/>
         <p className="product-name">Good Year Tyre - 165/65R14</p>
         <div className="porduct-price-container">
-          <p className="product-price">₹ 6000</p>
+          
           <a href="/Enquiry"><button className="product-Enquiry-btn">Enquiry</button></a>
           
         </div>
@@ -99,7 +99,7 @@ function Ourproducts() {
         <img src={Ourproductimg1} alt="productimage" className="poductimage"/>
         <p className="product-name">Good Year Tyre - 165/65R14</p>
         <div className="porduct-price-container">
-          <p className="product-price">₹ 6000</p>
+          
           <a href="/Enquiry"> <button className="product-Enquiry-btn">Enquiry</button></a>
          
         </div>
@@ -107,7 +107,8 @@ function Ourproducts() {
     </div>
         </Slider>
 
-    </div>
+    </div></div>
+   
   );
 }
 

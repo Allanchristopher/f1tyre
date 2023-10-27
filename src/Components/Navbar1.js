@@ -96,7 +96,7 @@ function Navbar1() {
             <FaTimes />
           </button>
         </nav>
-        <a href="tel:+91 7010573022">
+        <a href="tel:+91 9843061699">
           {" "}
           <button className="call-button"> CALL US NOW!</button>
         </a>

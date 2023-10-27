@@ -32,7 +32,7 @@ function Testmonial() {
         ]
       };
   return (
-    <div className="Testmonial">
+    <div className="Testmonial-big-screen"><div className="Testmonial">
       <div className="Ourproducts-heading-container">
         <p className="Ourproducts-heading">Testimonial</p>
         <p className="Ourproducts-heading-text">
@@ -137,7 +137,8 @@ function Testmonial() {
     </div>
     
       </Slider>
-    </div>
+    </div></div>
+    
   );
 }
 
