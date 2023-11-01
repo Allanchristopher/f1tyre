@@ -32,7 +32,7 @@ function Testmonial() {
         ]
       };
   return (
-    <div className="Testmonial-big-screen"><div className="Testmonial">
+    <div className="Testmonial-big-screen"><div className="Testmonial" data-aos="fade-up" data-aos-duration="1000">
       <div className="Ourproducts-heading-container">
         <p className="Ourproducts-heading">Testimonial</p>
         <p className="Ourproducts-heading-text">

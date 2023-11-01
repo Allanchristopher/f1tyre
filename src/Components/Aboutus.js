@@ -17,11 +17,11 @@ function Aboutus() {
   return (
     <div className="Aboutus-big-screen">
       <div className="Aboutus">
-        <div className="Aboutus-container-1">
+        <div className="Aboutus-container-1" data-aos="zoom-in-right" data-aos-duration="1000">
           {isSmallScreen && <p className="Aboutus-heading">ABOUT US</p>}
           <img src={Aboutusimg} alt="Img" className="Aboutus-img" />
         </div>
-        <div className="Aboutus-container-2">
+        <div className="Aboutus-container-2"  data-aos="zoom-in-left" data-aos-duration="1000">
           {!isSmallScreen && <p className="Aboutus-heading">ABOUT US</p>}
           <p className="Aboutus-text">
             At F1 Tyre city, we are passionate about providing top-notch wheel

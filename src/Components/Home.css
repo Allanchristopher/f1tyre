@@ -3,6 +3,8 @@
   display: flex;
   align-items: center;
   justify-content:space-around;
+  position: relative;
+  
 }
 .Home {
   width: 100%;
@@ -10,7 +12,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 50px;
-  position: relative;
+ 
 }
 .Home-background-color {
   width: 100%;
@@ -19,6 +21,7 @@
   display: grid;
   grid-template-columns: 1fr 0.6fr;
   z-index: -1;
+ 
 }
 .Home-background-color-container {
   background-color: #fff7f7;
@@ -61,6 +64,8 @@
 .Home-btn {
   width: 157px;
   height: 46px;
+  /* width: 100%;
+  height: 100%; */
   border: none;
   text-transform: uppercase;
   border-radius: 5px;
@@ -75,16 +80,30 @@
 }
 .Home-enquiry-btn {
   background: #ec3237;
+  transition: 0.2s ease-in-out;
+  
 }
 .Home-call-btn {
   background: #000000;
+  transition: 0.2s ease-in-out;
 }
-
+.Home-enquiry-btn:hover{
+  background-color: transparent;
+  color: #ec3237;
+  border: 1px solid #ec3237;
+}
+.Home-call-btn:hover {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+}
 .Socialmedia-home {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   display: flex;
   gap: 25px;
+  padding-left: 60px;
+
 }
 .home-socialmedia-icon {
 
@@ -111,6 +130,9 @@
     grid-template-columns: 1fr;
     gap: 50px;
     position: relative;
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .Home-container-1 {
     align-items: center;
@@ -121,26 +143,39 @@
   }
 }
 @media (max-width:700px){
+  .Home{
+    height: auto;
+    gap: 0px;
+  }
   .Home-img {
     width:100%;
-    height: 358px;
+    height: 231px;
   }
   .Home-heading {
-    font-size: 40px;
+    font-size: 25px;
   }
   .Home-btn {
-    width: 107px;
+    width: 130px;
     height: 46px;
     font-size: 10px;
   }
   .Home-text {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .Home-background-color-container {
+    background-color: transparent;
   }
 }
-@media (max-width:350px){
-  .Home-heading {
-    font-size: 30px;
+/* @media (max-width:380px){
+  .Home-btn {
+    width: 110px;
+    height: 46px;
   }
+} */
+@media (max-width:350px){
+  /* .Home-heading {
+    font-size: 30px;
+  } */
   .Home-btn {
     width: 87px;
     height: 46px;

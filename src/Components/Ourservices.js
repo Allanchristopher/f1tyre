@@ -16,7 +16,7 @@ function Ourservices() {
   }, []);
   return (
     <div className="Ourservices-big-screen"><div className="Ourservices">
-      <div className="Ourservices-container-1">
+      <div className="Ourservices-container-1" data-aos="fade-up" data-aos-duration="1000">
         <p className="Ourservice-heading">Our Services</p>
         <p className="Ourservice-text">
           We offer a comprehensive range of top-notch solutions to meet all your
@@ -25,13 +25,13 @@ function Ourservices() {
       </div>
       <div className="Ourservices-container-2">
         <div className="Ourservice-1">
-          <div className="Ourservice--img-container">
+          <div className="Ourservice--img-container" data-aos="zoom-in-right" data-aos-duration="1000">
           {isSmallScreen && (
             <p className="Ourservice-1-text-heading">Wheel Alignment</p>
           )}
             <img src={Ourserviceimg} alt="Img" className="Ourserviceimg" />
           </div>
-          <div className="Ourservice--text">
+          <div className="Ourservice--text" data-aos="zoom-in-left" data-aos-duration="1000">
           {!isSmallScreen && (
             <p className="Ourservice-1-text-heading">Wheel Alignment</p>
           )}
@@ -48,11 +48,11 @@ function Ourservices() {
         <div className="Ourservice-1">
         {isSmallScreen && (
           <> 
-          <div className="Ourservice--img-container">
+          <div className="Ourservice--img-container" data-aos="zoom-in-left" data-aos-duration="1000">
           <p className="Ourservice-1-text-heading">Wheel Balancing</p>
           <img src={Ourserviceimg} alt="Img" className="Ourserviceimg" />
         </div>
-         <div className="Ourservice--text">
+         <div className="Ourservice--text" data-aos="zoom-in-right" data-aos-duration="1000">
             <p className="Ourservice-1-text-text">
               When it comes to maintaining your vehicle's performance and
               ensuring a safe driving experience, wheel balancing is a crucial
@@ -67,7 +67,7 @@ function Ourservices() {
         )}
 
         {!isSmallScreen && (
-          <>   <div className="Ourservice--text">
+          <>   <div className="Ourservice--text" data-aos="zoom-in-right" data-aos-duration="1000">
             <p className="Ourservice-1-text-heading">Wheel Balancing</p>
             <p className="Ourservice-1-text-text">
               When it comes to maintaining your vehicle's performance and
@@ -78,7 +78,7 @@ function Ourservices() {
               conditions.
             </p>
           </div>
-          <div className="Ourservice--img-container">
+          <div className="Ourservice--img-container" data-aos="zoom-in-left" data-aos-duration="1000">
             <img src={Ourserviceimg} alt="Img" className="Ourserviceimg" />
           </div></>
         )}
@@ -87,13 +87,13 @@ function Ourservices() {
        
         </div>
         <div className="Ourservice-1">
-          <div className="Ourservice--img-container">
+          <div className="Ourservice--img-container" data-aos="zoom-in-right" data-aos-duration="1000">
           {isSmallScreen && (
             <p className="Ourservice-1-text-heading">Tyre Fitting</p>
           )}
             <img src={Ourserviceimg} alt="Img" className="Ourserviceimg" />
           </div>
-          <div className="Ourservice--text">
+          <div className="Ourservice--text" data-aos="zoom-in-left" data-aos-duration="1000">
           {!isSmallScreen && (
             <p className="Ourservice-1-text-heading">Tyre Fitting</p>
           )}

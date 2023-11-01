@@ -27,7 +27,7 @@ function Gallery() {
     ]
   };
   return (
-    <div className="Gallery-big-screen">  <div className="Gallery">
+    <div className="Gallery-big-screen">  <div className="Gallery" data-aos="fade-up" data-aos-duration="1000">
       <div className="Gallery-heading-container">
         <p className="Gallery-heading">Gallery</p>
         <p className="Gallery-heading-text">

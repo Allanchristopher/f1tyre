@@ -41,7 +41,7 @@ function Ourproducts() {
     ]
   };
   return (
-    <div className="Ourproducts-big-screen"> <div className="Ourproducts">
+    <div className="Ourproducts-big-screen"> <div className="Ourproducts" data-aos="fade-up" data-aos-duration="1000">
       <div className="Ourproducts-heading-container">
         <p className="Ourproducts-heading">Our Products</p>
         <p className="Ourproducts-heading-text">

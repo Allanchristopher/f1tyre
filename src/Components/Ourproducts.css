@@ -93,10 +93,22 @@
   cursor: pointer;
 }
 
+.product-slider-carousel .slick-dots{
+  position: absolute;
+  bottom: -60px;
+
+}
+
 
 @media(max-width:700px){
+  .Ourproducts{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media(max-width:700px){
   .Ourproducts-heading {
-    font-size: 30px;
+    font-size: 25px;
   }
   .product-card {
     width: 290px;
@@ -118,6 +130,9 @@
     border-radius: 5px;
     font-size: 10px;
   }
+.Ourproducts-heading-text {
+  font-size: 12px;
+  }
 }
 @media(max-width:600px){
   .product-card {
@@ -138,7 +153,7 @@
     height: 270px;
   }
   .product-name {
-    font-size: 14px;
+    font-size: 12px;
   }
   .poductimage {
     width: 120px;

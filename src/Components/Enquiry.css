@@ -93,16 +93,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
 }
 .Enquiry-text-name {
   width: 80%;
-  height: 30px;
-  border: none;
-  border-bottom: 1px solid #8d8d8d;
+  height: 50px;
+  /* border: none;
+  border-bottom: 1px solid #8d8d8d; */
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 20px;
   color: #343434;
   font-family: var(--total-font-family);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
@@ -111,7 +117,7 @@
 .Enquiry-text-name::placeholder {
   color: #343434;
   font-family: var(--total-font-family);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
@@ -128,6 +134,12 @@ line-height: 20px;
 letter-spacing: 2px;
 text-align: center;
 color: #FFFFFF;
+transition: ease-in-out 0.2s;
+}
+.Enquiry-submit-button:hover{
+  background-color: transparent;
+  color: #ec3237;
+  border: 1px solid #ec3237;
 }
 .Enquiry-socialmedia-icon a{
  text-decoration: none;

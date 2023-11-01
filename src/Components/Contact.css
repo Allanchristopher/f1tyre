@@ -97,7 +97,7 @@
 .Contact-formcontainer-2 {
   width: 100%;
   height: 100%;
-  padding-top: 50px;
+  /* padding-top: 50px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -105,12 +105,18 @@
 }
 .Contact-text-name {
   width: 80%;
-  height: 30px;
-  border: none;
-  border-bottom: 1px solid #8d8d8d;
+  height: 40px;
+  /* border: none;
+  border-bottom: 1px solid #8d8d8d; */
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
   color: #343434;
   font-family: var(--total-font-family);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
@@ -120,7 +126,7 @@
 .Contact-text-area::placeholder {
   color: #343434;
   font-family: var(--total-font-family);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
@@ -137,12 +143,25 @@
   letter-spacing: 2px;
   text-align: center;
   color: #ffffff;
+  transition: ease-in-out 0.2s;
+}
+
+.Contact-submit-button:hover{
+  background-color: transparent;
+  color: #ec3237;
+  border: 1px solid #ec3237;
 }
 .Contact-text-area {
   width: 80%;
   height: 170px;
-  border: none;
-  border-bottom: 1px solid #8d8d8d;
+  /* border: none;
+  border-bottom: 1px solid #8d8d8d; */
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 20px;
   color: #343434;
   font-family: var(--total-font-family);
   font-size: 20px;
@@ -154,6 +173,7 @@
 .callus-direction-btn-container {
   width: 80%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
@@ -161,13 +181,34 @@
 .Direction-btn {
   width: 80%;
   background-color: #000000;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.Callus-btn:hover,
+.Direction-btn:hover{
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
 .leaf-let-map {
   width: 480px;
   height: 450px;
   z-index: 0;
 }
 @media (max-width: 1000px) {
+  /* .Contact{
+    padding-left: 40px;
+    padding-right: 40px;
+  } */
+  .Contact-text-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .Contact-form-conatiner {
     width: 100%;
     height: auto;
@@ -210,10 +251,14 @@
 }
 @media (max-width: 700px) {
   .Contact-heading {
-    font-size: 30px;
+    font-size: 25px;
   }
   .Contact-information {
-    font-size: 23px;
+    font-size: 24px;
+  }
+  .Contact-information-text,
+  .Contact-text {
+    font-size: 14px;
   }
 }
 @media (max-width: 640px) {
@@ -238,10 +283,7 @@
   }
 }
 @media (max-width: 350px) {
-  .Contact-information-text,
-  .Contact-text {
-    font-size: 14px;
-  }
+
   .leaf-let-map {
     width: 270px;
     height: 468px;

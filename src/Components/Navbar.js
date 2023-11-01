@@ -66,7 +66,7 @@ function Navbar() {
               to="Ourproducts"
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={-130}
               duration={500}
               onClick={handleShowNavbar}
             >
@@ -79,7 +79,7 @@ function Navbar() {
               to="Gallery"
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={-130}
               duration={500}
               onClick={handleShowNavbar}
             >
@@ -92,7 +92,7 @@ function Navbar() {
               to="Testmonial"
               spy={true}
               smooth={true}
-              offset={-26}
+              offset={-130}
               duration={500}
               onClick={handleShowNavbar}
             >
@@ -118,7 +118,7 @@ function Navbar() {
               to="Contact"
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={0}
               duration={500}
               onClick={handleShowNavbar}
             >

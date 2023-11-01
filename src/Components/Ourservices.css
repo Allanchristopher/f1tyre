@@ -89,6 +89,10 @@
   text-align: left;
 }
 @media(max-width:1000px){
+  .Ourservices {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .Ourservice--img-container {
     display: flex;
     flex-direction: column;
@@ -117,14 +121,18 @@
 }
 @media(max-width:700px){
   .Ourservice-heading ,.Ourservice-1-text-heading{
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .Ourservice-text {
+
+  }
+  .Ourservice-1-text-text{
+    font-size: 12px;
   }
 
 }
 @media(max-width:350px){
-  .Ourservice-1-text-text,.Ourservice-text {
-    font-size: 14px;
-  }
+
 
 }
 @media(min-width:1400px){

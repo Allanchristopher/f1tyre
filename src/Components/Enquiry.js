@@ -14,7 +14,7 @@ function Enquiry() {
     <>
     <Navbar1/>
     <div className="Enquiry-big-screen"> <div className="Enquiry">
-      <div className="Enquiry-text-container">
+      <div className="Enquiry-text-container" data-aos="fade-down" data-aos-duration="1000">
         <p className="Enquiry-heading">Enquiry</p>
         <br />
         <p className="Enquiry-text">
@@ -22,7 +22,7 @@ function Enquiry() {
         </p>
       </div>
       <div className="Enquiry-form-conatiner">
-        <div className="Enquiry-formcontainer-1">
+        <div className="Enquiry-formcontainer-1" data-aos="fade-right" data-aos-duration="1000">
           <div className="Enquiry-formcontainer-1-1">
             <p className="Enquiry-information">Enquiry information</p>
             <p className="Enquiry-information-text">
@@ -75,14 +75,20 @@ function Enquiry() {
             
           </div>
         </div>
-        <div className="Enquiry-formcontainer-2">
+        <form className="Enquiry-formcontainer-2" data-aos="fade-left" data-aos-duration="1000">
           <input type="text" placeholder="Name" className="Enquiry-text-name" required/>
           <input type="text" placeholder="Phone Number" className="Enquiry-text-name" required/>
-          <input type="text" placeholder="choose Brand" className="Enquiry-text-name" required/>
+          {/* <input type="text" placeholder="choose Brand" className="Enquiry-text-name" required/> */}
+          <select className="Enquiry-text-name" required>
+          <option value="" disabled selected>Choose Brand</option>
+    <option value="Brand 1">Yokohama</option>
+    <option value="Brand 2">Good</option>
+    <option value="Brand 3">Brand 3</option>
+  </select>
           <input type="text" placeholder="Tyre Size" className="Enquiry-text-name" required/>
           <input type="text" placeholder="Tyre Pattern" className="Enquiry-text-name" required/>
           <button className="Enquiry-submit-button Home-btn" type="Submit">SUBMIT</button>
-        </div>
+        </form>
       </div>
     </div></div>
    </>

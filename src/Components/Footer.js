@@ -12,7 +12,7 @@ import { Link } from "react-scroll";
 function Footer() {
   return (
     <div className="Footer">
-      <div className="Footer-container-1">
+      <div className="Footer-container-1" data-aos="fade-up" data-aos-duration="1000">
         <div className="footer-box-1">
           <div className="footer-socialmedia-icon">
           <a href="https://www.facebook.com/people/Gracelin-Home-For-Ladies/100069548683405/"><img
@@ -76,7 +76,7 @@ function Footer() {
       to="Ourproducts"
       spy={true}
       smooth={true}
-      offset={-40}
+      offset={-60}
       duration={500}
     ><p>Products</p></Link>
     <Link
@@ -84,7 +84,7 @@ function Footer() {
     to="Gallery"
     spy={true}
     smooth={true}
-    offset={-40}
+    offset={-60}
     duration={500}
   ><p>Gallery</p></Link>
   <Link
@@ -92,7 +92,7 @@ function Footer() {
   to="Testmonial"
   spy={true}
   smooth={true}
-  offset={-26}
+  offset={-60}
   duration={500}
 ><p>Testimonial</p></Link>
 <Link
@@ -108,7 +108,7 @@ activeClass="nothing"
 to="Contact"
 spy={true}
 smooth={true}
-offset={100}
+offset={0}
 duration={500}>
 <p>Contact</p></Link>
             

@@ -71,6 +71,8 @@
 @media (max-width: 1000px) {
     .Footer {
       position: relative;
+      padding-left: 40px;
+      padding-right: 40px;
       }
   .Footer-container-1 {
     width: 100%;
@@ -106,10 +108,25 @@
   }
   .footer-socialmedia-icon{
     position: absolute;
-    bottom: 20px;
+    bottom: -40px;
     display: flex;
 }
   
+}
+@media(max-width:700px){
+  .Footer-logo-text{
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .Company-container Link p{
+    font-size: 14px;
+  }
+  .Footer-headings{
+    font-size: 18px;
+  }
+  .Reachus-container a p{
+    font-size: 14px;  
+  }
 }
 @media(max-width:350px){
   .Footer-headings{
