@@ -171,12 +171,12 @@
 .Home{
   min-height: 90vh;
 }
-.Socialmedia-home {
+/* .Socialmedia-home {
   width: 100%;
   align-items: center;
   justify-content: center;
   padding-left: 0px;
-}
+} */
 }
 /* @media (max-width:380px){
   .Home-btn {
