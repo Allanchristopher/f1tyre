@@ -24,7 +24,7 @@ function Navbar1() {
     <>
       <header className={activenavbar ? "header active-navbar" : "header"} >
      
-          <a href="">  <img className="navlogo" src={logo} alt="Logo" /></a>
+          <a href="f1tyre.com">  <img className="navlogo" src={logo} alt="Logo" /></a>
         
         <nav className={`nav-elements  ${showNavbar && "responsive_nav"}`}>
           {/* <a >
