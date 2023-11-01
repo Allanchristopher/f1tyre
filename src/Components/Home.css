@@ -101,6 +101,7 @@
   position: absolute;
   bottom: 30px;
   display: flex;
+
   gap: 25px;
   padding-left: 60px;
 
@@ -169,6 +170,12 @@
 @media(max-width:500px){
 .Home{
   min-height: 90vh;
+}
+.Socialmedia-home {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0px;
 }
 }
 /* @media (max-width:380px){
