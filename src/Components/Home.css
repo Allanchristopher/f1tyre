@@ -166,6 +166,11 @@
     background-color: transparent;
   }
 }
+@media(max-width:500px){
+.Home{
+  min-height: 90vh;
+}
+}
 /* @media (max-width:380px){
   .Home-btn {
     width: 110px;

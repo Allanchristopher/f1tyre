@@ -52,7 +52,7 @@ function Home() {
   return (
     <div div className="Total-conatainer-gsap">
       <Navbar />
-      <div className="Home-big-screen" ref={homeRef}>
+      <div className="Home-big-screen" ref={homeRef}> 
         <div className="Home-background-color">
           <div></div>
           <div className="Home-background-color-container"></div>
