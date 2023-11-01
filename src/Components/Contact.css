@@ -7,12 +7,13 @@
 .Contact {
   width: 100%;
   min-height: 100vh;
-  padding: 50px 0px 50px 0px;
+  padding: 0px 0px 50px 0px;
 }
 .Contact-text-container {
   width: 100%;
   height: auto;
-  padding: 50px;
+  /* padding: 50px; */
+  padding-bottom: 50px;
 }
 .Contact-heading {
   font-family: var(--total-font-family);

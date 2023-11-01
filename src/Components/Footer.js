@@ -108,7 +108,7 @@ activeClass="nothing"
 to="Contact"
 spy={true}
 smooth={true}
-offset={0}
+offset={-80}
 duration={500}>
 <p>Contact</p></Link>
             
