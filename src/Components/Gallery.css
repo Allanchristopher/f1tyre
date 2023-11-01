@@ -47,6 +47,10 @@
   align-items: center;
   justify-content: center;
 }
+.Gallery-slider-carousel .slick-dots{
+  position: absolute;
+  bottom: -70px;
+}
 .Gallery-carousel-icon {
   display: flex !important;
   align-items: center;
