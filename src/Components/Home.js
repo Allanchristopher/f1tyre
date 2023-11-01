@@ -56,7 +56,7 @@ function Home() {
         <div className="Home-background-color">
           <div></div>
           <div className="Home-background-color-container"></div>
-          <div className="Socialmedia-home" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="2000">
+          <div className="Socialmedia-home" data-aos="zoom-in" data-aos-offset="-500" data-aos-duration="2000">
             <a href="https://www.facebook.com/people/Gracelin-Home-For-Ladies/100069548683405/">
               <img
                 src={homefb}
